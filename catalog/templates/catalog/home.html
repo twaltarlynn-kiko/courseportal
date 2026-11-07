@@ -1,0 +1,200 @@
+VPN TYPE: Site-to-Client (WireGuard / IPsec Remote Access)
+
+VPN SERVER: MB-Router — public IP 200.100.10.1
+
+CLIENT: Remote-Laptop — tunnels to MB network (192.168.10.0/24)
+
+ENCRYPTION: AES-256 (IPsec) or ChaCha20 (WireGuard)
+
+AUTH: Pre-Shared Key or Public Key pair
+
+TUNNEL IP: 172.16.0.2 (assigned to this client)
+
+BENEFIT: Remote worker accesses DHCP, DNS, Web, Email servers
+
+securely over the public internet
+
+COMMAND: MB-Router(config)# crypto isakmp policy 10
+
+MB-Router(config-isakmp)# encryption aes 256
+
+MB-Router(config-isakmp)# authentication pre-share
+ 
+SPECIAL TOPIC IN COMPUTER NETWORK SYSTEMS
+
+PRACTICAL FINAL EXAMINATION
+ 
+Figure 1: Complete network topology.
+Figure 2: MB-Router IP configuration.
+Figure 3: LB-Router IP configuration.
+Figure 4: Admin-PC1 static IP configuration.
+Figure 5: Admin-PC2 DHCP configuration.
+Figure 6: Director-PC static IP configuration.
+Figure 7: IT-PC1 IP configuration.
+Figure 8: DHCP-SVR IP configuration.
+Figure 9: DNS-SVR IP configuration.
+Figure 10: WEB-SVR IP configuration.
+Figure 11: MAIL-SVR IP configuration.
+Figure 12: FTP-SVR IP configuration.
+Figure 13: Network connectivity test.
+T2 — OSPF
+Figure 14: MB-Router OSPF configuration.
+Figure 15: LB-Router OSPF configuration.
+Figure 16: OSPF neighbor verification.
+Figure 17: OSPF routing table.
+Figure 18: Cross-building connectivity test.
+T3 — Security
+Figure 19: ACL 10 configuration.
+Figure 20: Student network access blocked.
+Figure 21: Director network access allowed.
+Figure 22: ACL match counters.
+T4 — Network Services
+Figure 23: DHCP address assignment.
+Figure 24: DNS and web service test.
+Figure 25: Email service test.
+Figure 26: FTP file transfer test.
+T5 — Wireless / VPN
+Figure 27: Staff-Laptop wireless connection.
+Figure 28: WRT300N wireless configuration.
+Figure 29: VPN configuration note.
+Figure 30: Remote-Laptop ISP ping test.
+Figure 31: Pre-VPN network access test.
+Figure 32: ICMP packet simulation.
+Figure 33: MB-Router routing table.
+Figure 34: Serial interface verification.
+Figure 35: ACL verification.
+Figure 36: OSPF neighbor verification.
+ 
+Item 1: FitPulse - The Feedback Loop of a Lean Startup
+I think there are two main assumptions FitPulse needs to test for the business. There is the Value Hypothesis. The thinking is that a 15-minute workout will appeal to busy office workers who don't have a lot of free time. They may want to exercise but it can be hard to go to the gym for an hour. A quick workout with a real trainer can make exercise easier and also give them motivation.
+The second is the growth hypothesis. FitPulse is based on the premise that if people like the workout, they will keep using it and may tell their friends or coworkers about it. So, the company needs to know if people try the app but if they actually come back and use it again.
+For the MVP, I would not build the full app from the start as it can be very expensive. I would do a simple Concierge MVP. For example, users can sign up on a Google Form, and then join a 15-minute workout via Zoom. The trainers can run the sessions manually. I can tell you how many people sign up, how many come back, and how many refer it to other people. This is a way to test the idea without spending more money on the app.
+So, the first thing I’d do for the Build-Measure-Learn process is build this simple version of FitPulse. Then, I’d measure what users actually do. Some useful metrics are: how many people finish their first workout, how many workouts they do per week and how many users are still using the service after 30 days. These are more useful as they show real behavior.
+I'd not be too focused on things like total number of registered users, app downloads or social media likes. These are vanity metrics, because they can look good, but they don’t actually tell you if people like the product. For example, having 5,000 registered users doesn’t really mean anything if only 50 people actually exercise.
+I would set a target before starting the test for the decision. For example, if 60% of the users complete their first workout, 40% are still active after 30 days and active users do around two workouts every week, I would continue developing FitPulse. If they are much lower, I would look at what is causing the problem and change the idea. Maybe the timing of the workout is off, for example, or users don’t get enough value from the sessions. Then I would retest the new idea rather than spending money on the full app right away.
+Item 2: CropSense IoT – Business Model Canvas Essay
+CropSense IoT is an AgriTech start-up that offers organic farmers innovative soil sensing solutions and satellite-readings analytics to get insight into the properties of their farm and optimize crop production and irrigation.
+Front Stage Architecture
+The main Customer Segment for CropSense would be commercial organic farming entities, medium and large-scale, for whom the costs of irrigation and consequent losses of crop volume due to improper care are disastrous. These farmers would be highly interested in a tool that allows them to observe and predict the developments in their plots without the need for large-scale manual interference.
+The greatest Value Proposition of the start-up would be the provision of analytical information about the crop condition and soil quality based on IoT and satellite data, which will allow optimize the irrigation schedule and, consequently, maximize yield. Thus, the offered solution would serve as a solid basis for farmer decision-making in crop management.
+As for Channels, they could include not only direct sales via the company’s website and agricultural exhibitions but also cooperation with organic farming communities and agricultural cooperatives. Due to the very nature of the product, the necessity for direct treatment of the infrastructure in the form of sensors’ installation is inevitable; thus, the company should employ field-sell specialists. In terms of Customer Relationship, the provision of complex technical support and installation will be complemented by the provision of remote online dashboards and platforms to track and evaluate the state of the crop. The relationship with the customer will be built primarily at the stage of installation and technical support, and thereafter, the farmer will be able to monitor and manage the system independently. Overall, the suggested approach will help fulfill the customer’s expectations of personalized experience, as the farmer will be directly involved in the management of the system.
+Back Stage Infrastructure and Financial Ripple Effect
+Concerning the Key Activities, according to the Value Proposition, they will include sensor installations, processing and analyzing the data retrieved from the sensors and satellites, implementing yield forecasts, optimizing crop irrigation, and providing technical and managerial support to the farmers. The company will have to maintain a network of expert installers and technical support agents, equip them with knowledge about the technology and farming in general, and provide them with the necessary tools for satellite data processing and analytical support.
+As for Key Resources, in addition to the aforementioned support network, it will include IoT sensors, software-developing expertise, data science expertise, servers and software for storing and processing satellite data, and the online platform for analytical dashboard visualization. The key partnerships will be established with hardware developers, satellite data providers and processors, cloud platform suppliers, irrigation equipment manufacturers, and agro-cooperatives and farming associations.
+Accordingly, the suggested infrastructure will entangle the Cost Structure that will consist of hardware maintenance and development costs, costs of cloud data storage, technical support staff, crop analytics and forecasts, online platform maintenance, and customer support. The key source of Revenue Streams for the start-up will be subscription-based, seasonally or annually renewed payments from farmer entities based on the size of their farm or the number of installed sensors. Thus, the described costs will be proportionate to the volumes of services provided by the company.
+The Systemic Failure Point and Lean Validation
+The primary risky assumption is that the soil properties’ indication will be accurate enough to be used for irrigation and yield prediction purposes. If it fails, the entire solution will become questionable, as there is no guarantee that the forecasted values will match the actual ones. For instance, if the moisture level in the sample area is incorrect, and the irrigation system will be erroneously triggered, the company will provide irrelevant recommendations to the farmer.
+Therefore, the development of a small-scale MVP with a limited number of farmers (5-10 entities) is a reasonable way to test the critical assumption. Instead of creating a complex system of data processing and decision-making, the start-up can be installed with a limited set of sensors and verify if the results match the manually collected data for the same locations. Thus, the indicators to be validated include the accuracy of the sensor readings and the adequacy of the recommendations based on them. If the verification is positive and there are few inconsistencies, they will be possible to eliminate during the installation and maintenance processes.
+ 
+ 
+ 
+ 
+Item 3: FlexSave – User Persona and UX/UI Design Essay
+ 
+For FlexSave, the main problem with depending on demographic data is that it offers only a shallow grasp of users. Details like a user's age and job (for example, a 32-year-old freelance driver) reveal nothing about their motivations, behaviors, and pain points, all of which are essential when defining the product design.
+ 
+For example, a primary persona for FlexSave might be a 32-year-old freelance driver by the name of Niran. Because of his line of work, his income can fluctuate significantly from one month to the next, so at times he has spare money he can put aside, while in other months he may be unable to save at all. His main motivation is to put some money aside for emergencies, since he cannot reliably predict his income or future expenses. Yet he does not wish to commit to a fixed monthly saving schedule, given his unpredictable income. His key pain points might involve limited financial literacy and a fear of losing access to the saved money when emergency costs come up. When it comes to the product's gains, the option to set flexible monthly savings targets and the guarantee that a certain amount stays accessible in an emergency are probably the most important factors for him, along with the chance to invest with minimal financial risk. On the downside, he is very likely to be puzzled by technical financial jargon, and the prospect of not being able to access his savings during emergencies could add further stress, something the product should aim to reduce.
+ 
+Regarding FlexSave's design, these considerations could be incorporated by letting users set dynamic monthly goals rather than following the conventional rigid method. It is particularly important to keep the product intuitive and to limit the use of financial jargon. For instance, the homepage could show the current savings amount, a progress bar toward the emergency fund goal, and a suggested amount to save for that month. In addition, the interface could be built to reduce cognitive load, for example, by clearly showing which amounts are available for emergencies and which amounts are invested.
+ 
+The Golden Rule of Focus matters greatly in product design, since focusing on the most impactful segments can lead to a product that users genuinely want. For FlexSave, applying the Rule means that roughly 80% of design effort and time should go toward the Primary Persona and their needs, while the remaining 20% should be assigned to the Secondary Personas. Therefore, most of the attention should go to building the flexible monthly savings option, the emergency fund, the investment feature, and easy withdrawal. Features aimed at other users' needs (such as the wish to reach financial freedom or a distrust of banks) could be introduced as optional elements. By spending too much time and effort on the needs of the latter, the company would end up with a product that addresses only minor problems for most users.
+ 
+Lastly, a persona can be used to carry out a usability test. For example, with Niran, the task might involve having the user picture a situation in which they receive more income than usual during a particular month. Consequently, their potential for saving would be higher than, for instance, their income in May. The user would then need to go to the FlexSave homepage and choose how much they wish to save that month.
+ 
+During the task, the user's decision-making process and the time needed to finish the task can be tracked. This would allow the designer to spot possible problems that target users might face (like trouble figuring out how much to save or choosing the emergency fund). In addition, the test could assess whether the participant can locate the information they need (such as funds set aside for emergencies). If the persona suggests that the user would be overwhelmed by too much financial jargon, this would support removing it from the design in favor of a simpler option.
+ 
+For FitPulse, I think there are two main things that the company should test first. The first one is the Value Hypothesis. The idea is that busy office workers may be interested in a 15-minute workout because they don’t have much free time. Some people want to exercise but they may not have enough time to go to the gym for a long time. So, a short workout with a real trainer could be more convenient for them. It can also give them some motivation to exercise.
+
+The second one is the Growth Hypothesis. FitPulse expects that if people enjoy the workout, they will continue using it and maybe tell their friends or coworkers about it. Because of this, the company should not only look at how many people try the workout. It should also check if those people come back and use it again.
+
+For the MVP, I would not build the whole app at the beginning. It would probably cost too much and there is also a chance that the idea may not work. I would start with a simple Concierge MVP. For example, people could register using a Google Form and then join a 15-minute workout on Zoom. The trainer can manage everything manually. From this test, FitPulse can see how many people sign up, how many actually join, how many come back and if they recommend it to someone else.
+
+For the Build-Measure-Learn process, I would first build this simple version and let some people try it. Then I would measure what they actually do. I think useful measurements would be how many people finish their first workout, how often they workout in a week and how many users are still using the service after 30 days. These numbers are more useful because they show actual user behavior.
+
+I would not pay too much attention to things like the number of downloads, total registered users or social media likes. These numbers can look impressive but they don’t always mean that people actually like the product. For example, if FitPulse has 5,000 registered users but only 50 people actually do the workouts, then having 5,000 users does not really tell us much.
+
+Before doing the test, I would also set some targets. For example, if 60% of users complete their first workout, 40% are still active after 30 days and active users do around two workouts each week, I would continue developing the idea. If the results are much lower, I would try to find out why. Maybe the workout time is not suitable for busy workers, or maybe people don’t think the workout is useful enough. I would then change the idea and test it again before spending money on the full app.
+ 
+CropSense IoT is an AgriTech start-up that helps organic farmers by using soil sensors and satellite data. The purpose is to give farmers more information about their soil and crops so they can make better decisions, especially about irrigation and crop production.
+
+For the customer segment, I think medium and large organic farms would be the main customers. These farms can lose a lot of money if they use too much water or if their crops are not taken care of properly. CropSense could help farmers understand what is happening in different parts of their farm without having to check everything manually.
+
+The main value of CropSense is the information that comes from the IoT sensors and satellite data. The system can provide information about soil condition, moisture and crop health. Farmers can use this information to decide when they need to water their crops and how much water they should use. This can help them save water and possibly improve their crop production.
+
+For the channels, CropSense could sell its service through the company website, agricultural exhibitions and farming communities. It could also cooperate with agricultural cooperatives and farming organizations. Since sensors have to be installed on the farms, the company would need staff who can go to the farms and install them. For customer relationships, CropSense should provide installation help and technical support. After the installation, farmers could use an online dashboard to check their information by themselves.
+
+The main activities of the company would include installing and maintaining sensors, collecting data, analyzing the data from sensors and satellites, and giving recommendations to farmers. CropSense would also need technical support staff who understand the system and have some knowledge about farming.
+
+The key resources would include IoT sensors, software developers, data analysts, cloud storage, satellite data and an online dashboard. The company could also work with hardware suppliers, satellite data companies, cloud service providers, irrigation equipment companies and agricultural organizations. These partnerships would help CropSense provide the service.
+
+The main costs would be the cost of developing and maintaining the sensors, cloud storage, staff salaries, data analysis, software maintenance and customer support. For revenue, I think a subscription model would work well. Farmers could pay monthly, seasonally or yearly depending on the size of their farm or the number of sensors they use.
+
+One of the biggest risks for CropSense is the accuracy of the sensor information. If the sensors give wrong information, farmers may make wrong decisions. For example, if the sensor says that the soil is too dry when it is actually fine, the farmer may use too much water. This can cause problems for the farmer and also make them lose trust in the CropSense system.
+
+Because of this, I think the company should first test the idea with a small MVP. They could start with around 5 to 10 farms and only use a small number of sensors. The information from the sensors could be compared with information collected manually from the same areas. Then the company can see whether the sensor readings are accurate and whether the recommendations are useful. If there are problems, they can fix them before building the full system. I think this is better than spending a lot of money on the full product before knowing if the main idea really works.
+ 
+Item 3 – FlexSave
+
+For FlexSave, I don’t think demographic information alone is enough to understand the users. Knowing someone’s age and job gives us some basic information, but it doesn’t tell us what the person really wants or what problems they have. These things are important when designing a product because different people can have very different needs even if they are the same age.
+
+For example, the primary persona for FlexSave could be a 32-year-old freelance driver called Niran. His income can be different every month because it depends on how much work he gets. Some months he may have extra money to save, but in other months he may not be able to save much. His main goal is to have some money for emergencies because he cannot always predict his income or expenses. At the same time, he may not like a fixed saving plan because his income is not stable.
+
+Niran may also have limited knowledge about financial products. He might worry about putting his money somewhere and then not being able to use it when he really needs it. So, FlexSave should allow him to change his saving goal depending on his income each month. Having some money available for emergencies would also be important. If there is an investment feature, it should be simple and explain the risk clearly instead of using difficult financial words.
+
+For the design, I think FlexSave should be simple and easy to understand. Users should be able to choose their own saving target instead of having to save the same amount every month. For example, the homepage could show the total amount saved, progress toward the emergency fund and a suggested amount to save that month. It should also be easy to see which money is available for emergencies and which money has been invested. This can help users understand their money without feeling confused.
+
+The Golden Rule of Focus is also important for FlexSave. I think most of the design work should focus on the Primary Persona because that is the main type of user the product is trying to help. Around 80% of the effort could be used for the main user’s needs and the other 20% could be for Secondary Personas. For Niran, the important features would be flexible saving goals, an emergency fund, a simple investment option and easy access to his money. Other features can be added later if they are needed by other types of users.
+
+A persona can also be used when doing a usability test. For example, we could ask a user to imagine that they earned more money than usual in one month. Because they have more money that month, they may want to save more. We can then ask them to open the FlexSave homepage and decide how much they want to save.
+
+While they are doing the task, we can see how long it takes and where they have problems. Maybe they don’t know where to change the saving amount, or they cannot easily find their emergency fund. We can also see if they understand the information on the screen. If the user gets confused by financial terms, it means the design may need simpler words. This kind of test can help FlexSave understand what users actually find difficult and make the product easier to use.
+ 
+SPECIAL TOPIC IN COMPUTER NETWORK SYSTEMS.docx
+ 
+240702403770_Finalexam.pkt
+ 
+Simulation mode packet capture showing PDU layers
+ 
+SPECIAL TOPIC IN COMPUTER NETWORK SYSTEMS 1.docx
+ 
+After configuring the IP addresses, I tested the connection from Admin-PC1 to the gateway 192.168.10.1 using ping.
+ 
+I also tested connectivity from Admin-PC1 to the Server network gateway 192.168.20.1.”
+ 
+ested connectivity from Director-PC to the Server network gateway.
+ 
+also tested connectivity from Director-PC to the Lab Student gateway.
+ 
+verified the OSPF neighbor relationship between the two routers.”
+ 
+also checked the OSPF routing table to verify that the routes were learned correctly.”
+ 
+“I tested connectivity from Admin-PC1 in the Main Building to the Lab Building Student gateway.”
+ 
+I tested connectivity from Admin-PC1 to the Lab Building IT gateway.
+ 
+tested connectivity from IT-PC1 in the Lab Building to the Main Building Admin gateway.”
+ 
+tested connectivity from IT-PC1 to the Main Building Server gateway.
+ 
+configured an ACL to block the Student network from accessing the Server network.”
+ 
+The Director network was allowed to access the Server network.
+ 
+checked the ACL match counters to verify that the rules were working
+ 
+tested DHCP address assignment to make sure the client can receive an IP address automatically.”
+ 
+used the put command to upload sampleFile.txt to the FTP server.
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>CoursePortal</title>
+</head>
+<body>
+<h1>Welcome to CoursePortal</h1>
+<p>Welcome to our online course portal.</p>
+</body>
+</html>
+ 

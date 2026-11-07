@@ -1,0 +1,55 @@
+{% extends 'catalog/base.html' %}
+{% block title %}Submit Inquiry{% endblock %}
+{% block content %}
+<div class="container">
+<h2 class="mb-4">Course Inquiry Form</h2>
+   {% if submitted_data %}
+<div class="alert alert-success">
+           Your inquiry has been submitted successfully!
+<p>Name: {{ submitted_data.student_name }}</p>
+<p>Email: {{ submitted_data.email }}</p>
+<p>Course: {{ submitted_data.course_code }}</p>
+<p>Message: {{ submitted_data.message }}</p>
+</div>
+   {% endif %}
+   {% if errors %}
+<div class="alert alert-danger">
+           {% for error in errors %}
+<p>{{ error }}</p>
+           {% endfor %}
+</div>
+   {% endif %}
+<form method="POST">
+       {% csrf_token %}
+<div class="mb-3">
+<label class="form-label">Student Name</label>
+<input type="text" name="student_name"
+                  class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" name="email"
+                  class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Course</label>
+<select name="course_code" class="form-select" required>
+<option value="">Select a course</option>
+               {% for course in courses %}
+<option value="{{ course.code }}">
+                       {{ course.code }} - {{ course.title }}
+</option>
+               {% endfor %}
+</select>
+</div>
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea name="message" class="form-control"
+                     rows="4" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary">
+           Submit Inquiry
+</button>
+</form>
+</div>
+{% endblock %}
